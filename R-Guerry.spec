@@ -4,7 +4,7 @@
 #
 Name     : R-Guerry
 Version  : 1.6.1
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/Guerry_1.6-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Guerry_1.6-1.tar.gz
 Summary  : Maps, data and methods related to Guerry (1833) "Moral
