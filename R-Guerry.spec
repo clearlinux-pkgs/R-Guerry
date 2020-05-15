@@ -4,7 +4,7 @@
 #
 Name     : R-Guerry
 Version  : 1.7.0
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/Guerry_1.7.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Guerry_1.7.0.tar.gz
 Summary  : Maps, Data and Methods Related to Guerry (1833) "Moral
@@ -20,21 +20,22 @@ graphic methods related to Guerry's "Moral Statistics of France". The goal is to
 
 %prep
 %setup -q -c -n Guerry
+cd %{_builddir}/Guerry
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580320619
+export SOURCE_DATE_EPOCH=1589520054
 
 %install
-export SOURCE_DATE_EPOCH=1580320619
+export SOURCE_DATE_EPOCH=1589520054
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
