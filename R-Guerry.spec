@@ -4,19 +4,13 @@
 #
 Name     : R-Guerry
 Version  : 1.7.4
-Release  : 29
+Release  : 30
 URL      : https://cran.r-project.org/src/contrib/Guerry_1.7.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Guerry_1.7.4.tar.gz
 Summary  : Maps, Data and Methods Related to Guerry (1833) "Moral
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-ade4
-Requires: R-adegraphics
-Requires: R-adespatial
 Requires: R-sp
-BuildRequires : R-ade4
-BuildRequires : R-adegraphics
-BuildRequires : R-adespatial
 BuildRequires : R-sp
 BuildRequires : buildreq-R
 
@@ -33,10 +27,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1632925719
+export SOURCE_DATE_EPOCH=1633718238
 
 %install
-export SOURCE_DATE_EPOCH=1632925719
+export SOURCE_DATE_EPOCH=1633718238
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
